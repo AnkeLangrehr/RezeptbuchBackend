@@ -1,5 +1,6 @@
 
 import Entities.RezeptEntity;
+import Services.RecipeService;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -11,10 +12,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("rezepte");
-        em = emf.createEntityManager();
+        RecipeService recipeService= new RecipeService();
+        recipeService.getRecipeDescription();
 
-        getAllRecipes();
 
     }
 

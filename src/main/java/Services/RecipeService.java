@@ -30,6 +30,17 @@ public class RecipeService {
         System.out.println(rezeptEntities);
         return rezeptEntities;
     }
+    public String getRecipeDescription(){
+       EntityManagerFactory emf = Persistence.createEntityManagerFactory("rezepte");
+        EntityManager em = emf.createEntityManager();
+        em.getTransaction().begin();
+            String beschreibung = em.createQuery("SELECT e FROM Entities.RezeptEntity e WHERE id=2 ", RezeptEntity.class).getSingleResult().getBeschreibung();
+            em.getTransaction().commit();
+            System.out.println(beschreibung);
+            return "Ich will nicht mehr :(";
+
+
+    }
 
 
 }
