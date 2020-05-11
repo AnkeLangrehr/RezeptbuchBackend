@@ -7,6 +7,7 @@
 
     <persistence-unit name="rezepte">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>Entities.RezeptEntity</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/rezeptbuch" />
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />

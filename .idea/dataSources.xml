@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="rezepte/Hibernate" uuid="13e6a47f-2135-4202-9e69-edeec2556700">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Users/ankel/IdeaProjects/RestTest/RezeptbuchTest-master/RezeptbuchTest-master/Rezeptbuch/Backend/src/main/resources/META-INF/persistence.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/rezeptbuch</jdbc-url>
+    </data-source>
+  </component>
+</project>

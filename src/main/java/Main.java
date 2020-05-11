@@ -12,8 +12,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        RecipeService recipeService= new RecipeService();
-        recipeService.getRecipeDescription();
+        /*RecipeService recipeService= new RecipeService();
+        recipeService.getRecipeDescription();*/
+        RecipeService recipeService = new RecipeService();
+        recipeService.deleteRecipe(4);
 
 
     }
